@@ -3,12 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reservia est un site vous permettant de trouver un hébergement pour des vacances de rêve">
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
     <title>Reservia || Trouvez votre hébergement pour des vacances de rêve</title>
 </head>
 <body>
-    
+    <header class="main-head">
+
+            <img src="./images/logo/Reservia.svg" alt="" id="logo">
+                <nav>
+                <ul>
+                    <li><a href="#hebergements">Hébergements</a></li>
+                    <li><a href="#activites">Activités</a></li>
+                </ul>
+                <a class="inscription" href="#inscription">S'inscrire</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <section id="find">
+            <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+            <p>En plein centre ville ou en pleine nature</p>
+            <div id="search-bar">
+                
+                <span class="search-bar"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></span>
+                <form method="get" action="search">
+                <input type="search" placeholder="Destination" value="Marseille, France">
+                </form>
+               <span class="button"> <button class="search-button" type="button"> Rechercher </button></span>
+               <!-- Version mobile-->
+               <!-- <span class="search"><i class="fas fa-search" aria-hidden="true"></i></span>-->
+            
+            </div>
+            <div class="options">
+                <h3>Filtres</h3>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+            </div>
+            <div class="info">
+                <i class="fas fa-info-circle"></i>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>   
+            </div>
+        </section>
+        
+        <section id="hebergements">
+            <article id="liste">
+                <h3>Hébergements à Marseille</h3>
+                <div class="menu">
+                   <div id="one"><img src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt=""></div> 
+                   <div id="two"><img src="./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt=""></div> 
+                   <div id="three"><img src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt=""></div> 
+                   <div id="four"><img src="./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt=""></div> 
+                   <div id="five"><img src="./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt=""></div>
+                   <div id="six"><img src="./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt=""></div> 
+                   
+                </div>
+            </article>
+            <article id="most-popular">
+                <div id="onebis"><img src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt=""></div>
+                <div id="twobis"><img src="./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt=""></div>
+                <div id="threebis"><img src="./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt=""></div> 
+            </article>
+        </section>
+
+        <section id="activites">
+
+        </section>
+
+    </main>
+
+    <footer>
+        
+    </footer>
 </body>
 </html>
