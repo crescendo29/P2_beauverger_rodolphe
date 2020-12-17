@@ -10,38 +10,41 @@ html {
 
 body {
   font-family: "Raleway", sans-serif;
-  width: 80%;
+  width: 75%;
   margin: auto;
   padding-top: 1rem;
 }
-a {
+
+/* Header*/
+header {
+  min-height: 10vh;
+}
+header a {
   text-decoration: none;
   padding-top: 3rem;
+  font-weight: 500;
+  color: #474747;
+  padding-right: 3rem;
+  padding-left: 3rem;
 }
-a:visited {
-  color: #0065fc;
-}
-.inscription {
-  font-weight: 700;
-}
-/* Header*/
 
 header a:hover {
+  color: #0065fc;
   border-top: 0.3rem solid blue;
 }
 
 .main-head {
   display: flex;
   justify-content: space-between;
-  top: 0;
-  background: white;
+}
+.inscription {
+  font-weight: 700;
+  color: #0065fc;
 }
 
 nav {
   font-size: 2rem;
   display: flex;
-  flex-wrap: wrap;
-  padding-top: 0rem;
 }
 
 .main-head ul {
@@ -50,23 +53,16 @@ nav {
   list-style: none;
   padding-top: 3rem;
 }
-.main-head a {
-  padding-right: 3rem;
-  padding-left: 3rem;
-}
+
 #logo {
   padding-top: 3rem;
 }
 /* Main*/
-main {
-  display: flex;
-  flex-wrap: wrap;
-}
 
 #find {
-  height: 10;
+  min-height: 20vh;
   width: 75%;
-  padding: 2rem 0rem;
+  padding: 1rem 0rem;
 }
 
 #find h2 {
@@ -114,38 +110,45 @@ main {
   padding: 2rem;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .options {
   display: flex;
   align-items: center;
   padding: 0.5rem;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   width: 100%;
   font-weight: 400;
   font-size: 1.7rem;
+  position: relative;
 }
 .options button {
+  height: 7vh;
   font-weight: 300;
   font-size: 1.5rem;
-  padding: 0rem 2rem 0rem 0rem;
+  padding: 0rem 1.8rem 0rem 0rem;
   background: white;
   border: 3px solid #f2f2f2;
   border-radius: 45px;
   display: flex;
   align-items: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
 
 .options i {
   background: #deebff;
-  border: 3px solid #deebff;
+  border: 4px solid #deebff;
+  font-size: 3rem;
+  padding: 1rem;
   color: #0065fc;
-  padding: 1.5rem;
   border-radius: 100%;
+  position: absolute;
 }
-.options h3 {
-  margin-left: 1rem;
+.options button h3 {
+  padding-left: 7rem;
 }
 
 .info {
@@ -163,75 +166,141 @@ main {
 .info p {
   margin: 1.5rem;
 }
-
+.options button:hover {
+  background: #deebff;
+}
 /* Hébergements */
 #hebergements {
-  width: 100%;
-  height: 75%;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap-reverse;
   justify-content: space-between;
-  background: white;
+  width: 100%;
+  min-height: 50vh;
 }
-#hebergements img {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  object-fit: cover;
-  width: 14vw;
-  height: 18vh;
-}
-#hebergements #liste {
-  background: #f2f2f2;
-  flex: 3 1 70rem;
-  border-radius: 25px;
-  margin-right: 3rem;
-}
-#hebergements #liste .menu {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 1rem;
-}
-
-#hebergements a {
-  background: white;
-  border-radius: 25px;
-  margin: 2rem;
-  padding: 0.5rem;
-}
-
-#liste h3 {
+#hebergements h3 {
   font-size: 2.5rem;
-  padding-top: 3.5rem;
-  padding-left: 5rem;
-}
-.menu h4 {
-  font-size: 2rem;
-  color: black;
-  padding: 0.5rem 1rem;
-}
-.menu p {
-  font-size: 1.5rem;
-  color: black;
-  padding: 0.5rem 1rem;
-}
-.stars {
-  padding: 0.5rem 1rem;
-}
-.dark {
-  color: #857d7d48;
+  padding: 3rem 2rem 0rem 2rem;
 }
 #hebergements .more {
   font-size: 2rem;
-  font-weight: 700;
-  color: black;
-  padding: 3rem 3rem 3rem 5rem;
-  display: flex;
+}
+#hebergements #liste {
+  flex: 2 1 600px;
   background: #f2f2f2;
+  border-radius: 25px;
 }
 #hebergements #most-popular {
-  background: cornflowerblue;
-  flex: 2 1 20rem;
+  flex: 1 1 200px;
+  background: #f2f2f2;
+  margin-left: 2rem;
+  border-radius: 25px;
+}
+
+#hebergements #liste img {
+  object-fit: cover;
+  width: 280px;
+  height: 110px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu a {
+  background: white;
+  display: flex;
+  justify-content: center;
+  flex: 1 1 150px;
+  height: 180px;
+  padding: 0.5rem 0.5rem;
+  text-decoration: none;
+  margin: 2rem;
+  border-radius: 25px;
+  box-shadow: 5px 5px 3px 3px rgba(179, 173, 173, 0.1);
+}
+.room h4 {
+  font-size: 1.8rem;
+  color: black;
+}
+.room p {
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding-top: 0.3rem;
+  color: black;
+}
+.room .stars {
+  font-size: 1.3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: #0065fc;
+}
+.room .stars .dark {
+  color: #e0e0e0;
+}
+figcaption {
+  padding-left: 2rem;
+}
+.more {
+  text-decoration: none;
+  padding: 3rem 2rem;
+  font-weight: 700;
+  color: black;
+  display: flex;
+}
+.more:hover {
+  color: #0065fc;
+}
+#most-popular {
+  display: flex;
+  flex-direction: column;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2.5rem;
+  padding: 3rem;
+}
+.rooms {
+  margin: 0rem 3rem 3rem 3rem;
+  background: white;
+  border-radius: 25px;
+  box-shadow: 5px 5px 3px 3px rgba(179, 173, 173, 0.1);
+  display: flex;
+}
+.rooms figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.rooms img {
+  object-fit: cover;
+  height: 140px;
+  width: 150px;
+  padding: 0.5rem;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+#most-popular a {
+  text-decoration: none;
+  color: black;
+}
+#most-popular .dark {
+  color: #e0e0e0;
+}
+.rooms h4 {
+  font-size: 1.5rem;
+  padding: 0rem 0.5rem 1rem 0rem;
+}
+.rooms p {
+  font-size: 1.5rem;
+}
+.rooms i {
+  font-size: 1.5rem;
+  color: #0065fc;
+}
+
+footer {
+  min-height: 100vh;
 }
