@@ -13,7 +13,7 @@
 <body>
     <header class="main-head">
 
-            <img src="./images/logo/Reservia.svg" alt="" id="logo">
+            <img src="./images/logo/Reservia.svg" alt="logo" id="logo">
                 <nav>
                 <ul>
                     <li><a class="top" href="#hebergements">Hébergements</a></li>
@@ -25,35 +25,33 @@
     </header>
 
     <main>
-        <div id="container">
-        <section id="find">
+        <section id="hero">
             <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
             <p>En plein centre ville ou en pleine nature</p>
             <div id="search-bar">
                 
-                <div class="search-bar"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></div>
-                <form method="get" action="search">
+                <div class="gps"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></div>
+                <form method="get" action="search" class="location">
                 <input type="search" placeholder="Destination" value="Marseille, France">
                 </form>
-               <div class="button"> <button class="search-button" type="button"> Rechercher </button></div>
-               <!-- Version mobile-->
-               <!-- <div class="search"><i class="fas fa-search" aria-hidden="true"></i></div>-->
-            
+                <button class="search" type="button"> Rechercher </button>
             </div>
             <div class="options">
                 <h3>Filtres</h3>
-                <button>
-                    <i class="fas fa-money-bill-wave"></i>
-                    <h3>&#201conomique</h3></button>
-                <button>
-                    <i class="fas fa-child"></i>
-                    <h3>Familial</h3></button>
-                <button>
-                    <i class="fas fa-heart"></i>
-                    <h3>Romantique</h3></button>
-                <button>
-                    <i class="fas fa-dog"></i>
-                    <h3>Animaux autorisés</h3></button>
+                <div id="filtre">
+                    <button id="filtre--btn">
+                        <i id="blue" class="fas fa-money-bill-wave"></i>
+                        <h3>&#201conomique</h3></button>
+                    <button id="filtre--btn">
+                        <i id="blue" class="fas fa-child"></i>
+                        <h3>Familial</h3></button>
+                    <button id="filtre--btn">
+                        <i id="blue" class="fas fa-heart"></i>
+                        <h3>Romantique</h3></button>
+                    <button id="filtre--btn">
+                        <i id="blue" class="fas fa-dog"></i>
+                        <h3>Animaux autorisés</h3></button>
+                </div>
             </div>
             <div class="info">
                 <i class="fas fa-info-circle"></i>
@@ -165,11 +163,11 @@
             </article>
             <article id="most-popular">
                 <div class="menus">
-                    <div class="head">
+                    <div class="menus-head">
                         <h4>Les plus populaires</h4>
                         <i class="fas fa-chart-line"></i>
                     </div>
-                        <a href="#" id="matin">
+                        <a href="#">
                         <figure class="rooms">
                             <img src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="photo de chambre">
                             <figcaption>
@@ -231,45 +229,53 @@
         <section id="activites">
             <h2>Activités à Marseille</h2>
             <div class="patchwork">
-                <a href="#">
-                    <figure class="gallery1">
-                        <img src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="panorama">
-                        <figcatption><h4>Vieux Port</h4></figcatption>    
-                    </figure>
-                </a>
-                <a href="#">
-                    <figure class="gallery2">
-                        <img src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="panorama">
+                <div class="patchwork--one">
+                    <div class="gallery">
+                        <figure>
+                            <a href="#"><img class="gallery1" src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="panorama"></a>
+                            <figcatption><h4>Vieux Port</h4></figcatption>    
+                        </figure>
+                    </div>
+                </div>
+                <div class="patchwork--two">
+                    <div class="gallery">
+                        <figure>
+                        <a href="#"><img class="gallery2" src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="panorama"></a>
                         <figcatption><h4>Fort de Pomègues</h4></figcatption>    
                     </figure>
-                </a>
-                    <a href="#">
-                        <figure class="gallery3">
-                        <img src="./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="panorama">
+                </div>
+                    <div class="gallery">
+                        <figure>
+                        <a href="#"><img class="gallery3" src="./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="panorama"></a>
                         <figcatption><h4>&#206les du Frioul</h4></figcatption>    
                     </figure>
-                </a>
-                <a href="#">
-                    <figure class="gallery4">
-                        <img src="./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="panorama">
-                        <figcatption><h4>Parc National des Calanques</h4></figcatption>    
-                    </figure>
-                </a>
-                <a href="#">
-                    <figure class="gallery5">
-                        <img src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="panorama">
-                        <figcatption><h4>Notre-Dame-de-la-Garde</h4></figcatption>    
-                    </figure>
-                </a>
-                <a href="#">
-                    <figure class="gallery6">
-                        <img src="./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="panorama">
-                        <figcatption><h4>Parc Longchamp</h4></figcatption>    
-                    </figure>
-                </a>
+                </div>
+                </div>
+                    
+                <div class="patchwork--three">
+                    <div class="gallery">
+                        <figure>
+                            <a href="#"><img class="gallery4" src="./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="panorama"></a>
+                            <figcatption><h4>Parc National des Calanques</h4></figcatption>    
+                        </figure>
+                    </div>
+                </div>
+                <div class="patchwork--four">
+                    <div class="gallery">
+                        <figure>
+                            <a href="#"><img class="gallery5" src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="panorama"></a>
+                            <figcatption><h4>Notre-Dame-de-la-Garde</h4></figcatption>    
+                        </figure>
+                    </div>
+                    <Div class="gallery">
+                        <figure>
+                            <a href="#"><img class="gallery6" src="./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="panorama"></a>
+                            <figcatption><h4>Parc Longchamp</h4></figcatption>    
+                        </figure>
+                    </div>
+                </Div>
             </div>
         </section>
-    </div>
     </main>
 
     <footer>
