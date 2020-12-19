@@ -20,15 +20,13 @@ body {
   color: black;
 }
 .main-head li a {
-  padding-top: 30px;
+  padding: 30px 15px 0px 15px;
+  margin: 0px 15px;
 }
-.main-head .inscription:hover {
-  color: #0065fc;
-  font-weight: 700;
-}
+
 .main-head li a:hover {
   color: #0065fc;
-  border-top: 3px solid #0065fc;
+  border-top: 2px solid #0065fc;
 }
 
 nav {
@@ -37,12 +35,17 @@ nav {
 nav ul {
   display: flex;
   width: 230px;
-  justify-content: space-between;
   list-style: none;
 }
-.inscription {
+.main-head .inscription {
   width: 130px;
   text-align: right;
+  margin-left: 30px;
+  color: #0065fc;
+  font-weight: 700;
+}
+.inscription:hover {
+  font-size: 18px;
 }
 /* Recherche*/
 main {
@@ -50,10 +53,10 @@ main {
   margin: auto;
 }
 #hero {
-  padding-top: 45px;
+  padding-top: 30px;
 }
 #hero p {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   color: rgba(66, 66, 66, 0.9);
   padding-top: 10px;
@@ -97,25 +100,26 @@ main {
   cursor: pointer;
 }
 .options {
-  height: 75px;
-  width: 1050px;
   display: flex;
   align-items: center;
+  padding-top: 15px;
 }
 #filtre {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  flex: 0.8 1 150px;
 }
 .filtre--btn {
+  font-weight: 700;
+  font-size: 17px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  border: 2px solid #f2f2f2;
+  margin: 0px 15px;
+  padding-right: 15px;
+  border: 3px solid #f2f2f2;
   height: 55px;
-  min-width: 200px;
   background: white;
   border-radius: 25px;
-  margin-right: 18px;
   transition: all 0.7s ease;
 }
 .filtre--btn:hover {
@@ -129,13 +133,15 @@ main {
   border-radius: 100%;
   font-size: 20px;
   padding-top: 17px;
+  margin-right: 15px;
 }
 .info {
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
 }
 .info i {
-  font-size: 20px;
+  font-size: 18px;
   margin: 20px 10px 10px 10px;
   background: #0065fc;
   color: white;
@@ -343,4 +349,5 @@ footer a {
 }
 footer a:hover {
   color: #0065fc;
+  font-weight: 700;
 }
