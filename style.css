@@ -366,6 +366,7 @@ footer a:hover {
 @media screen and (max-width: 414px) {
   .main-head {
     min-height: 15vh;
+    max-width: 414pxpx;
   }
   #logo {
     padding: 15px 0px 0px 20px;
@@ -497,10 +498,62 @@ footer a:hover {
   }
   footer {
     min-height: 75vh;
+    max-width: 414px;
     flex-direction: column;
     align-items: flex-start;
   }
   .footer {
-    padding-left: 30px;
+    padding-left: 25px;
+  }
+  footer h3,
+  ul {
+    min-width: 350px;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    width: 90%;
+    margin: auto;
+  }
+  #liste {
+    margin: 10px;
+    background: white;
+  }
+  #hebergements {
+    height: 145vh;
+  }
+  #most-popular .rooms {
+    height: 17vh;
+  }
+  #most-popular img {
+    width: 300px;
+    height: 17vh;
+  }
+  .menus-head {
+    align-items: center;
+  }
+  #activites {
+    height: 105vh;
+  }
+  .patchwork {
+    max-width: 700px;
+    height: 100vh;
+    flex-wrap: wrap;
+  }
+  .patchwork--two,
+  .patchwork--four {
+    justify-content: space-between;
+    height: 45vh;
+  }
+  footer {
+    max-width: 100%;
+    margin: auto;
+    height: 30vh;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: 10px;
+  }
+  .footer {
+    padding-left: 10px;
   }
 }
