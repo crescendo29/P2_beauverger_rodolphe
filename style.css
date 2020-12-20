@@ -6,47 +6,54 @@
 body {
   font-family: "Raleway", sans-serif;
 }
-
+a {
+  text-decoration: none;
+  color: black;
+}
 /*Header */
 .main-head {
   max-width: 1340px;
   margin: auto;
-  padding-top: 40px;
-  display: flex;
-  justify-content: space-between;
-}
-.main-head a {
-  text-decoration: none;
-  color: black;
-}
-.main-head li a {
-  padding: 30px 15px 0px 15px;
-  margin: 0px 15px;
-}
-
-.main-head li a:hover {
-  color: #0065fc;
-  border-top: 2px solid #0065fc;
+  font-weight: 400;
 }
 
 nav {
+  min-height: 5vh;
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 nav ul {
   display: flex;
-  width: 230px;
+  flex: 1 1 150px;
+  justify-content: right;
+  align-items: center;
   list-style: none;
 }
-.main-head .inscription {
-  width: 130px;
-  text-align: right;
-  margin-left: 30px;
-  color: #0065fc;
+nav ul li {
+  margin-right: 20px;
+  padding: 40px 20px 0px 20px;
+}
+#logo {
+  height: 90px;
+  padding-top: 40px;
+}
+nav a {
+  color: #585858;
+}
+.inscription {
   font-weight: 700;
+  color: #0065fc;
+  padding: 40px 20px 0px 20px;
 }
+
+nav li:hover,
 .inscription:hover {
-  font-size: 18px;
+  border-top: 2px solid #0065fc;
+  color: #0065fc;
 }
+
 /* Recherche*/
 main {
   max-width: 1340px;
@@ -67,6 +74,9 @@ main {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+.search--mobile {
+  display: none;
 }
 .gps {
   height: 55px;
@@ -244,6 +254,8 @@ main {
   background: white;
   border-radius: 20px;
   margin: 0px 30px 30px 30px;
+  box-shadow: 3px 3px 1px 1px rgba(179, 173, 173, 0.2),
+    5px 5px 3px 3px rgba(179, 173, 173, 0.1);
 }
 .menus a {
   text-decoration: none;
@@ -350,4 +362,145 @@ footer a {
 footer a:hover {
   color: #0065fc;
   font-weight: 700;
+}
+@media screen and (max-width: 414px) {
+  .main-head {
+    min-height: 15vh;
+  }
+  #logo {
+    padding: 15px 0px 0px 20px;
+  }
+  .inscription {
+    padding: 15px 25px 0px 0px;
+  }
+  nav {
+    margin: auto;
+  }
+  nav ul li {
+    margin-right: 20px;
+    padding: 20px 20px 20px 20px;
+  }
+  nav li:hover {
+    border-top: none;
+    border-bottom: 2px solid #0065fc;
+    color: #0065fc;
+  }
+
+  nav ul {
+    order: 3;
+    justify-content: space-around;
+    font-size: 18px;
+  }
+  #logo {
+    order: 1;
+  }
+  .inscription {
+    order: 2;
+  }
+  #hero {
+    min-height: 70vh;
+    width: 90%;
+    margin: auto;
+  }
+  #search-bar {
+    justify-content: center;
+  }
+  .search {
+    display: none;
+  }
+  .search--mobile {
+    display: block;
+    height: 55px;
+    width: 55px;
+    border-radius: 20px;
+    background: #0065fc;
+    color: white;
+    font-size: 18px;
+    border: 1px solid #0065fc;
+    margin-left: -10px;
+  }
+  .options {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .options h3 {
+    padding-bottom: 20px;
+  }
+  .filtre--btn {
+    margin: 10px;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .menus-head {
+    padding: 30px 30px;
+  }
+  .menus-head h4 {
+    padding: 0;
+    font-size: 22px;
+  }
+  #most-popular {
+    border-radius: 0px;
+    min-height: 70vh;
+  }
+  #most-popular img {
+    width: 120px;
+    height: 120px;
+  }
+  .rooms {
+    margin: 15px 20px;
+    font-size: 18px;
+  }
+  .name h4 {
+    padding-bottom: 10px;
+  }
+  #most-popular .stars {
+    font-size: 12px;
+  }
+  #liste {
+    background: white;
+  }
+  .menu a {
+    flex: 1 1 100px;
+    margin: 0px 0px;
+  }
+  #liste img {
+    width: 100%;
+  }
+  #liste h4 {
+    font-size: 18px;
+  }
+  #liste p {
+    font-size: 14px;
+  }
+  #activites {
+    padding: 20px 20px;
+    min-height: 185vh;
+  }
+  #activites > * {
+    flex-direction: column;
+  }
+  #activites img {
+    width: 100%;
+    height: 120px;
+  }
+  .patchwork > * {
+    flex: 1 1 100px;
+  }
+  #activites h2 {
+    margin-bottom: 30px;
+  }
+  #activites h4 {
+    font-size: 18px;
+  }
+  .gallery {
+    margin-bottom: 20px;
+  }
+  footer {
+    min-height: 75vh;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer {
+    padding-left: 30px;
+  }
 }
