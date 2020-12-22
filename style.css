@@ -329,7 +329,6 @@ footer {
   display: flex;
   flex: 1 1 50%;
   justify-content: center;
-  align-items: center;
 }
 .footer {
   padding-right: 3rem;
