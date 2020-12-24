@@ -13,13 +13,13 @@
 <body>
     <header id="main-head">
         <a href="#"><img id="main-head__logo" src="./images/logo/Reservia.svg" alt="logo"></a>
+        <a class="main-head__inscription mobile" href="#">S'inscrire</a>
         <nav>
                 <ul>
                     <li><a class="main-head__nav" href="#rooms">Hébergements</a></li>
                     <li><a class="main-head__nav" href="#activity">Activités</a></li>
-                    <li><a class="main-head__inscription" href="#">S'inscrire</a></li>
-                </ul>
-                <a class="main-head__inscription mobile" href="#">S'inscrire</a>
+                    <li><a class="main-head__inscription desktop" href="#">S'inscrire</a></li>
+                </ul>               
         </nav>
     </header>
 
@@ -34,25 +34,29 @@
                 <input type="search" placeholder="Destination" value="Marseille, France">
                 </form>
                 <button class="search" type="button"> Rechercher </button>
-                <button class="search mobile" type="button"><i class="fas fa-search"></i></button>
+                <button class="mobile" type="button"><i class="fas fa-search"></i></button>
 
             </div>
             <div class="hero__options">
                 <h3>Filtres</h3>
-                <div class="hero__options__filtre">
-                    <button class="hero__options__filtre__btn">
-                        <i class="fas fa-money-bill-wave blue"></i>
-                        <p>&#201;conomique</p></button>
-                    <button class="hero__options__filtre__btn">
-                        <i class="fas fa-child blue"></i>
-                        <p>Familial</p></button>
-                    <button class="hero__options__filtre__btn">
-                        <i class="fas fa-heart blue"></i>
-                        <p>Romantique</p></button>
-                    <button class="hero__options__filtre__btn">
-                        <i class="fas fa-dog blue"></i>
-                        <p>Animaux autorisés</p></button>
-                </div>
+                <ul class="hero__options__liste">
+                    <li>
+                        <a href="#"><span><i class="fas fa-money-bill-wave blue"></i></span>
+                        &#201;conomique</a>
+                    </li>
+                    <li>
+                        <a href="#"><span><i class="fas fa-child blue"></i></span>
+                        Familial</a>
+                    </li>
+                    <li>
+                        <a href="#"><span><i class="fas fa-heart blue"></i></span>
+                        Romantique</a>
+                    </li>
+                    <li>
+                        <a href="#"><span><i class="fas fa-dog blue"></i></span>
+                        Animaux autorisés</a>
+                    </li>
+                </ul>
             </div>
             <div class="hero__info">
                 <i class="fas fa-info-circle"></i>
@@ -60,7 +64,7 @@
             </div>
             </section>
         <section id="rooms">
-            <article id="rooms__liste">
+            <div id="rooms__liste">
                 <h3>Hébergements à Marseille</h3>
                 <div id="rooms__liste__details">
                     
@@ -155,9 +159,9 @@
                         </div>
                 </div>
                 <a class="rooms__liste__more" href="#">Afficher plus</a>
-            </article>
+            </div>
             
-            <article id="rooms__popular">
+            <div id="rooms__popular">
                 <div id="rooms__popular__head">
                     <h3>Les plus populaires</h3>
                 <i class="fas fa-chart-line"></i>
@@ -209,56 +213,44 @@
                     </div>
                 </div>
 
-            </article>
+            <div/>
         </section>  
         <section id="activity">
             <h2>Activités à Marseille</h2>
             <div id="activity__patchwork">
                     <div id="activity__patchwork__one">
                         <div class="activity__patchwork__btn">
-                            <div>
                                 <a class="activity__image" href="#"><img class="gallery1" src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="panorama"></a>
                                 <a class="activity__name" href="#"><h4>Vieux Port</h4></a>    
-                            </div>
                         </div>
                     </div>
 
                     <div id="activity__patchwork__two">
                         <div class="activity__patchwork__btn">
-                            <div>
                                 <a class="activity__image" href="#" ><img class="gallery2" src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="panorama"></a>
                                 <a class="activity__name" href="#"><h4>Fort de Pomègues</h4></a>    
-                            </div>
                         </div>
                         <div class="activity__patchwork__btn">
-                            <div>
                                 <a class="activity__image" href="#"><img class="gallery3" src="./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="panorama"></a>
                                 <a class="activity__name" href="#"><h4>&#206;les du Frioul</h4></a>    
-                            </div>
                         </div>
                     </div>
                     
                     <div id="activity__patchwork__three">
                         <div class="activity__patchwork__btn">
-                            <div>
                                 <a class="activity__image" href="#"><img class="gallery4" src="./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="panorama"></a>
                                 <a class="activity__name" href="#"><h4>Parc National des Calanques</h4></a>    
-                            </div>
                         </div>
                     </div>
 
                     <div id="activity__patchwork__four">
                         <div class="activity__patchwork__btn">
-                            <div>
                                 <a class="activity__image" href="#"><img class="gallery5" src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="panorama"></a>
                                 <a class="activity__name" href="#"><h4>Notre-Dame-de-la-Garde</h4></a>    
-                            </div>
                         </div>
                         <div class="activity__patchwork__btn">
-                            <div>
                                 <a class="activity__image" href="#"><img class="gallery6" src="./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="panorama"></a>
                                 <a class="activity__name" href="#"><h4>Parc Longchamp</h4></a>    
-                            </div>
                         </div>
                     </Div>
             </div>
