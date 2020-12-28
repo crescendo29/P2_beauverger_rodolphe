@@ -400,7 +400,7 @@ footer h3 {
     font-size: 1.6rem;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 415px) {
   header,
   main,
   footer {
@@ -425,10 +425,11 @@ footer h3 {
   }
 
   nav ul {
+    width: 100%;
     padding: 1.5rem 0rem;
     border-bottom: 2px solid grey;
   }
-  nav ul:hover {
+  nav ul a:hover {
     color: #0065fc;
     border-bottom: 2px solid #0065fc;
   }
@@ -490,8 +491,9 @@ footer h3 {
   #rooms__popular .room {
     height: 23vh;
   }
+
   #rooms__popular__details .room__description h4 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   #rooms__liste {
     background: white;
@@ -546,5 +548,21 @@ footer h3 {
   }
   .footer a:hover {
     color: #0065fc;
+  }
+}
+@media screen and (max-width: 1140px) and (min-width: 415px) {
+  header,
+  main {
+    width: 90%;
+    margin: auto;
+  }
+  body {
+    width: 80%;
+  }
+  #rooms__popular {
+    width: 100%;
+  }
+  #rooms__popular img {
+    width: 170px;
   }
 }
