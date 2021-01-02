@@ -401,18 +401,8 @@ footer h3 {
   #activity {
     width: 100%;
   }
-  #rooms__liste__details {
-    display: flex;
-    flex-direction: column;
-  }
   #rooms__popular {
     border-radius: 0px;
-  }
-  .room__image {
-    width: 45vw;
-  }
-  #rooms__popular img {
-    width: 40vw;
   }
   #rooms__popular .room {
     height: 23vh;
@@ -427,9 +417,14 @@ footer h3 {
   }
   #rooms__liste .room {
     height: 30vh;
+    width: 90%;
   }
   #rooms__liste__details img {
     height: 60%;
+    width: 100%;
+  }
+  #rooms__liste__details {
+    flex-direction: column;
   }
   #activity {
     width: 90%;
