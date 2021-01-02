@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Reservia est un site vous permettant de trouver un hébergement pour des vacances de rêve">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
@@ -12,12 +12,12 @@
 </head>
 <body>
     <header id="main-head">
-        <a href="#"><img id="main-head__logo" src="./images/logo/Reservia.svg" alt="logo"></a>
+        <a href="#"><img id="main-head__logo" src="./images/logo/Reservia@3x.png" alt="logo"></a>
         <a class="main-head__inscription mobile" href="#">S'inscrire</a>
         <nav>
                 <ul>
-                    <li><a class="main-head__nav" href="#rooms">Hébergements</a></li>
-                    <li><a class="main-head__nav" href="#activity">Activités</a></li>
+                    <li><a class="main-head__nav blue" href="#rooms">Hébergements</a></li>
+                    <li><a class="main-head__nav grey" href="#activity">Activités</a></li>
                     <li><a class="main-head__inscription desktop" href="#">S'inscrire</a></li>
                 </ul>               
         </nav>
@@ -32,9 +32,9 @@
                 <div class="gps"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></div>
                 <form class="location" method="get" action="search">
                 <input type="search" placeholder="Destination" value="Marseille, France">
-                </form>
                 <button class="search" type="button"> Rechercher </button>
                 <button class="mobile" type="button"><i class="fas fa-search"></i></button>
+                </form>
 
             </div>
             <div class="hero__options">
@@ -69,7 +69,9 @@
                 <div id="rooms__liste__details">
                     
                         <div class="room">
-                            <a class="room__image" href="#"><img src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="photo de chambre"></a>
+                            <a class="room__image" href="#"><img
+                                                                srcset="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg 750w" 
+                                                                src="./images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="photo de chambre"></a>
                             <div class="room__description">
                                 <a class="room__name" href="#"><h4>Auberge la Cannebière</h4></a>
                                 <p>Nuit à partir de 25€</p>
@@ -192,7 +194,7 @@
                                 <i class="fas fa-star light"></i>
                                 <i class="fas fa-star light"></i>
                                 <i class="fas fa-star light"></i>
-                                <i class="fas fa-star light"></i>
+                                <i class="fas fa-star light dark"></i>
                             </div>
                         </div>
                     </div>
@@ -207,7 +209,7 @@
                                 <i class="fas fa-star light"></i>
                                 <i class="fas fa-star light"></i>
                                 <i class="fas fa-star light"></i>
-                                <i class="fas fa-star light"></i>
+                                <i class="fas fa-star light dark"></i>
                             </div>
                         </div>
                     </div>
