@@ -96,6 +96,7 @@ nav ul a:hover {
   align-items: center;
   padding-bottom: 2rem;
   width: 85%;
+  position: relative;
 }
 .hero__options h3 {
   font-size: 1.5rem;
@@ -115,8 +116,9 @@ nav ul a:hover {
   border: 3px solid rgb(219, 216, 216);
   border-radius: 30px;
   border: 3px solid #f2f2f2;
+  padding: 1rem 0rem 1rem 2.5rem;
   transition: all 0.5s ease;
-  height: 60px;
+  position: relative;
 }
 .hero__options__liste li:hover {
   background: #deebff;
@@ -126,16 +128,15 @@ nav ul a:hover {
   background: #deebff;
   border-radius: 100%;
   padding: 1rem;
-  width: 55px;
-  margin-right: 1rem;
-  float: left;
+  position: absolute;
+  left: -15px;
 }
 .hero__options__liste a {
   text-decoration: none;
   color: black;
   display: flex;
   align-items: center;
-  padding-right: 1rem;
+  padding-right: 1.2rem;
 }
 
 .hero__info {
@@ -387,12 +388,22 @@ footer ul li {
 footer h3 {
   padding-bottom: 0.5rem;
 }
-@media screen and (min-width: 1500px) {
+@media all and (min-width: 1585px) {
   .hero__options {
     width: 75%;
   }
 }
-@media screen and (max-width: 1140px) and (min-width: 480px) {
+@media all and (max-width: 1389px) and (min-width: 565px) {
+  html {
+    font-size: 90%;
+  }
+  .hero__options {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero__options h3 {
+    padding-bottom: 1rem;
+  }
   #main-head {
     justify-content: flex-start;
   }
@@ -452,12 +463,13 @@ footer h3 {
     margin-bottom: 2rem;
   }
 }
-@media screen and (max-width: 480px) {
+@media all and (max-width: 565px) and (min-width: 358px) {
   header,
   main,
   footer {
     width: 100%;
   }
+
   #rooms__liste,
   #rooms__popular,
   #activity {
@@ -469,6 +481,7 @@ footer h3 {
   nav ul {
     padding: 0;
   }
+
   #main-head {
     flex-wrap: wrap;
     width: 100%;
@@ -479,7 +492,13 @@ footer h3 {
   #main-head__logo {
     padding: 0 0 0 1rem;
   }
-
+  .main-head__nav {
+    font-size: 0.9rem;
+    max-width: 100%;
+  }
+  .blue {
+    color: #0065fc;
+  }
   nav ul li {
     width: 100%;
     display: flex;
@@ -492,13 +511,6 @@ footer h3 {
   nav ul li:nth-child(2) {
     border-bottom: 3px solid #f2f2f2;
     padding: 0 0rem 1.5rem 1rem;
-  }
-  .blue {
-    color: #0065fc;
-    font-size: 1.3rem;
-  }
-  .grey {
-    font-size: 1.3rem;
   }
   .mobile {
     display: flex;
@@ -552,16 +564,11 @@ footer h3 {
   .hero__options {
     flex-direction: column;
     align-items: flex-start;
-  }
-  .hero__options h3 {
-    padding-bottom: 1rem;
-  }
-  .hero__options__liste {
-    font-size: 1.1rem;
+    position: relative;
     width: 100%;
   }
-  .hero__options__liste li {
-    margin-bottom: 10px;
+  .hero__options a {
+    font-size: 0.8rem;
   }
   #rooms__popular {
     border-radius: 0px;
@@ -632,4 +639,182 @@ footer h3 {
   .footer a:hover {
     color: #0065fc;
   }
+}
+@media all and (max-width: 358px) {
+  header,
+  main,
+  footer {
+    width: 100%;
+  }
+
+  #rooms__liste,
+  #rooms__popular,
+  #activity {
+    width: 100%;
+  }
+  nav {
+    width: 100%;
+  }
+  nav ul {
+    padding: 0;
+  }
+
+  #main-head {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  #main-head .mobile {
+    margin-right: 1rem;
+  }
+  #main-head__logo {
+    padding: 0 0 0 1rem;
+  }
+  .main-head__nav {
+    font-size: 0.9rem;
+    max-width: 100%;
+  }
+  .blue {
+    color: #0065fc;
+  }
+  nav ul li {
+    width: 100%;
+    display: flex;
+    flex: 1 0 50%;
+  }
+  nav ul li:nth-child(1) {
+    border-bottom: 3px solid #0065fc;
+    padding: 0 0rem 1.5rem 1rem;
+  }
+  nav ul li:nth-child(2) {
+    border-bottom: 3px solid #f2f2f2;
+    padding: 0 0rem 1.5rem 1rem;
+  }
+  .mobile {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    font-size: 1rem;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  #hero {
+    width: 90%;
+    margin: auto;
+  }
+  .search {
+    display: none;
+  }
+
+  #hero .mobile {
+    background: #0065fc;
+    width: 15vw;
+    justify-content: center;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    margin-left: -15px;
+  }
+  #hero h2 {
+    margin-top: 2rem;
+  }
+  .hero__search-bar {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .hero__search-bar .gps {
+    width: 19%;
+    height: 8vh;
+  }
+  .hero__search-bar input {
+    width: 100%;
+    height: 8vh;
+  }
+  .hero__search-bar .mobile {
+    height: 8vh;
+  }
+  .location {
+    display: flex;
+  }
+  .hero__options {
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    width: 100%;
+  }
+  .hero__options a {
+    font-size: 0.7rem;
+  }
+  #rooms__popular {
+    border-radius: 0px;
+  }
+  #rooms__popular .room {
+    height: 23vh;
+  }
+
+  #rooms__popular__details .room__description h4 {
+    font-size: 1.1rem;
+  }
+  #rooms__liste {
+    background: white;
+    margin: 0;
+  }
+  #rooms__liste .room {
+    height: 30vh;
+    width: 90%;
+  }
+  #rooms__liste__details img {
+    height: 60%;
+    width: 100%;
+  }
+  #rooms__liste__details {
+    flex-direction: column;
+  }
+  #activity {
+    width: 90%;
+    margin: auto;
+  }
+  #activity__patchwork {
+    flex-direction: column;
+    width: 100%;
+  }
+  #activity__patchwork img {
+    height: 25vh;
+  }
+  #activity__patchwork__one,
+  #activity__patchwork__two,
+  #activity__patchwork__three,
+  #activity__patchwork__four {
+    width: 100%;
+    height: 30%;
+  }
+  .activity__patchwork__btn {
+    margin-bottom: 2rem;
+  }
+  footer {
+    height: 70vh;
+  }
+
+  #container {
+    width: 90%;
+    flex-direction: column;
+  }
+  #container__left {
+    flex-direction: column;
+  }
+  #container ul {
+    padding-bottom: 1.5rem;
+  }
+  #container__right {
+    justify-content: flex-start;
+  }
+  .footer ul li {
+    padding: 0.4rem 0rem;
+  }
+  .footer a:hover {
+    color: #0065fc;
+  }
+}
 }
