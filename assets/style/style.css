@@ -481,6 +481,10 @@ footer h3 {
   nav ul {
     padding: 0;
   }
+  nav ul a:hover {
+    border-top: none;
+    color: black;
+  }
 
   #main-head {
     flex-wrap: wrap;
@@ -658,6 +662,10 @@ footer h3 {
   nav ul {
     padding: 0;
   }
+  nav ul a:hover {
+    border-top: none;
+    color: black;
+  }
 
   #main-head {
     flex-wrap: wrap;
@@ -688,6 +696,7 @@ footer h3 {
   nav ul li:nth-child(2) {
     border-bottom: 3px solid #f2f2f2;
     padding: 0 0rem 1.5rem 1rem;
+    margin-left: -15px;
   }
   .mobile {
     display: flex;
@@ -816,5 +825,4 @@ footer h3 {
   .footer a:hover {
     color: #0065fc;
   }
-}
 }
